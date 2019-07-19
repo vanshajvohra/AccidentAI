@@ -4,7 +4,7 @@ First Write : Vanshaj Vohra Aug 2018
 Last Write : Vanshaj Vohra Jul 2019
 
 The aim of this project is to detect cars that have suffered accidental damage from a given image.
-This is based on Mask R-CNN
+This is based on Mask R-CNN object detection and instance segmentation on Keras and TensorFlow models put by Matterport in public domain.  https://github.com/matterport/Mask_RCNN
 
 Usage :
 
