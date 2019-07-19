@@ -9,7 +9,7 @@ This is based on Mask R-CNN object detection and instance segmentation on Keras 
 Usage :
 
     # Train a new model starting from pre-trained COCO weights
-    python3 carAccidentDetect.py train --dataset=<directory with 2 subdirectories named 'train' and 'val'> --weights=<trained weights>
+    python3 carAccidentDetect.py train --dataset=<directory with 2 subdirectories named 'train' and 'validate'> --weights=<trained weights>
     python3 carAccidentDetect.py test --weights=<path to trained weights file.h5> --image=<path to test image file>
     python3 carAccidentDetect.py splash --weights=<path to trained weights file.h5> --video=<path to test video file>
 """
@@ -81,7 +81,7 @@ class CustomDataset(utils.Dataset):
         self.add_class("carAccident", 1, "carAccident")
 
         # Train or validation dataset?
-        assert subset in ["train", "val"]
+        assert subset in ["train", "validate"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
         # Load annotations
@@ -174,7 +174,7 @@ def train(model):
 
     # Validation dataset
     dataset_val = CustomDataset()
-    dataset_val.load_custom(args.dataset, "val")
+    dataset_val.load_custom(args.dataset, "valdate")
     dataset_val.prepare()
 
     model.train(dataset_train, dataset_val,
