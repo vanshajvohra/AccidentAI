@@ -28,4 +28,4 @@ Prerequisite - you should have python 3.x installed
     ```bash
     python3 setup.py install
     ```
-4. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
+4. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page (https://github.com/matterport/Mask_RCNN/releases/tag/v2.0).
