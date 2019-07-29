@@ -30,4 +30,4 @@ Prerequisite - you should have python 3.x installed
     ```
 4. Download pre-trained COCO weights (mask_rcnn_coco.h5) from https://github.com/matterport/Mask_RCNN/releases/tag/v2.0
 
-5. Download pre-trained 50 epoch weights for car accident images from 
+5. Download pre-trained 50 epoch weights for car accident images from http://tiny.cc/RCNNmodel
