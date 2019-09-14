@@ -30,4 +30,10 @@ Prerequisite - you should have python 3.x installed
     ```
 4. Download pre-trained COCO weights (mask_rcnn_coco.h5) from https://github.com/matterport/Mask_RCNN/releases/tag/v2.0 if you want to train something yourself else you can download the pretrained weights for the car accident images as given in next step
 
-5. Download pre-trained 50 epoch weights for car accident images from http://tiny.cc/RCNNmodel
+5. Download pre-trained 50 epoch weights (mask_rcnn_caraccident_0050.h5) for car accident from http://tiny.cc/RCNNmodel
+
+## To Run
+
+1. After downloading the source code
+2. Download the pretrained car accident weights "mask_rcnn_caraccident_0050.h5" from step 5 above and copy them under automatic_car_accident_detection_using_mask_rnn/carAccidentDetect directory
+3. execute python3 carAccidentDetecy.py --command="test" --weights="./mask_rcnn_caraccident_0050.h5" --image=<fully qualified path and name of image>
