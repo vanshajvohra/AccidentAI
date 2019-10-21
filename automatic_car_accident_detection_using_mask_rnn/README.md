@@ -36,6 +36,6 @@ Prerequisite - you should have python 3.x installed
 
 1. After downloading the source code
 2. Download the pretrained car accident weights "mask_rcnn_caraccident_0050.h5" from step 5 above and copy them under automatic_car_accident_detection_using_mask_rnn/carAccidentDetect directory
-3. execute python3 carAccidentDetecy.py --command="test" --weights="./mask_rcnn_caraccident_0050.h5" --image=fully qualified path and name of image
+3. execute python3 ./carAccidentDetect.py --weights="./mask_rcnn_caraccident_0050.h5" --image="./dataset/testImages/c100.jpeg" test . Substitute the name of the image to a full path image name other than the one in the example
 
 Make sure you have set the python env as per the requirements.txt in installation and all needed packages are installed
